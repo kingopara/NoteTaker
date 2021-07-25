@@ -1,0 +1,24 @@
+{
+  "name": "NoteTaker",
+  "version": "1.0.0",
+  "description": "As a small business owner, I want to be able to write and save notes so that I can keep track of tasks I need to complete and organize my thoughts.",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kingopara/NoteTaker.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kingopara/NoteTaker/issues"
+  },
+  "homepage": "https://github.com/kingopara/NoteTaker#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
