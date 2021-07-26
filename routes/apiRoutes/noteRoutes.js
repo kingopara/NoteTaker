@@ -31,4 +31,13 @@ router.post('/notes', (req, res) => {
     }
 });
 
+// router.delete('/notes/:id', (req, res) => {
+//     let id = req.params.id.toString();
+//     let file = readFile();
+
+//     const newFile = file.filter(data => data.id.toString() !== id)
+//     createNewNote(newFile);
+//     res.json(newFile);
+// });
+
 module.exports = router;
