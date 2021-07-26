@@ -1,7 +1,8 @@
 const router = require('express').Router();
-const { filterByQuery, findById, createNewNote, validateNote } = require('../../lib/notes');
+const { filterByQuery, findById, createNewNote, validateNote, deleteNote } = require('../../lib/notes');
 const { notes } = require('../../db/db.json');
 
+// route to notes api
 router.get('/notes', (req, res) => {
     let results = notes;
     if (req.query) {
@@ -19,6 +20,7 @@ router.get('/notes/:id', (req, res) => {
     }
 });
 
+// api route to post notes
 router.post('/notes', (req, res) => {
     //console.log(req.body);
     req.body.id = notes.length.toString();
@@ -31,13 +33,10 @@ router.post('/notes', (req, res) => {
     }
 });
 
-// router.delete('/notes/:id', (req, res) => {
-//     let id = req.params.id.toString();
-//     let file = readFile();
-
-//     const newFile = file.filter(data => data.id.toString() !== id)
-//     createNewNote(newFile);
-//     res.json(newFile);
-// });
+// route to delete note
+router.delete('/notes/:id', (req, res) => {
+    deleteNote(req.params.id, notes);
+    res.json(true);
+});
 
 module.exports = router;
