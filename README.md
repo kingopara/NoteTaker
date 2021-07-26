@@ -15,7 +15,7 @@ As a small business owner, I want to be able to write and save notes so that I c
 * [Badge](#badge)
 * [Contributing](#contributing)
 
-[Deployed application]()
+[Deployed application](https://note-taker-app27.herokuapp.com/)
 
 [Github Repository](https://github.com/kingopara/NoteTaker)
 
