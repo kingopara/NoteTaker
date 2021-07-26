@@ -48,6 +48,8 @@ As a small business owner, I want to be able to write and save notes so that I c
 
 ## Credit
 
+Made by Praise Opara with assistance from UT Austing Coding Bootcamp
+
 ## License
 
 [MIT](https://opensource.org/licenses/MIT)
